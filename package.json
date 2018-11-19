@@ -4,13 +4,22 @@
   "description": "Sample web-app for web MINI-PROJECT",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "test": "mocha ./**/*.test.js",
+    "test-watch": "nodemon --exec 'node test'",
+    "start": "nodemon server.js"
   },
   "author": "Ajay Kumar BC",
   "license": "ISC",
   "dependencies": {
+    "body-parse": "^0.1.0",
     "express": "^4.16.4",
-    "mongodb": "^3.1.10"
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.12"
+  },
+  "devDependencies": {
+    "expect": "^23.6.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.6",
+    "supertest": "^3.3.0"
   }
 }
