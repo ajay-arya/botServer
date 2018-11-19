@@ -2,10 +2,12 @@ var mongoose = require('mongoose');
 
 var review = mongoose.model('review', {
     name: {
-        type: String
+        type: String,
+        require: true
     },
     message: {
-        type: String
+        type: String,
+        require: true        
     }
 });
 

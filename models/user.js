@@ -2,15 +2,19 @@ var mongoose = require('mongoose');
 
 var user = mongoose.model('user', {
     fname: {
+        require: true,
         type: String
     },
     uname: {
+        require: true,
         type: String
     },
     email:  {
+        require: true,
         type: String
     },
     password: {
+        require: true,
         type: String
     }
 });
