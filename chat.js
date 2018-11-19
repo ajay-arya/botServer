@@ -69,4 +69,4 @@ chat.use(bodyParser.json());
         console.log('Starting at port: 80');
     });
 
-    module.exports = { chat };
+    // module.exports = { chat };
