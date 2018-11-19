@@ -65,7 +65,7 @@ chat.use(bodyParser.json());
         })
     });
 
-    chat.listen(8080, () => {
+    chat.listen(3000, () => {
         console.log('Starting at port: 3000');
     });
 
